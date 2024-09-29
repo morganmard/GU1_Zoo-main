@@ -17,6 +17,8 @@ class Program
         //Här printar vi ut dom
         Console.WriteLine(zooSmall);
         Console.WriteLine(zooLarge);
+        var biggestZoo = new csZoo(); //Tom constructor gör en av varje animal med alla moods
+        Console.WriteLine(biggestZoo);
     }
 }
 
@@ -35,3 +37,11 @@ class Program
 // make a program to create and print the amnimals
 // - one zoo called ”Small Zoo” with 5 animals
 // - a zoo called ”Large Zoo” with 25 animals
+
+
+/*
+Avancerat
+Skapa en tom constructor till csZoo som skapar ett zoo som har djur där det för varje
+djurtyp finns ett djur för varje humör.
+Dvs en Moose-Happy, Moose-Sleepy, .., Moose-Slow, .., Monkey-Happy, MonkeySleepy, .., Monkey-Slow
+*/

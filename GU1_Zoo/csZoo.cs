@@ -32,5 +32,17 @@ namespace GU1_Zoo
 			}
 			return s;
 		}
+
+		public csZoo() // Den avancerade tomma constructorn som skapar ett djur med alla olika moods
+		{
+			foreach (enKind kind in Enum.GetValues(typeof(enKind))) //Loopar igenom kind enum
+			{
+				foreach (enMood mood in Enum.GetValues(typeof(enMood))) //Nested foreach som loopar över enum
+				{
+					animals.Add(new csAnimal(new csSeedGenerator()) { Kind = kind, Mood = mood }); //Vi saknar constructor för endast kind och mood, så vi använder rnd
+				}
+			}
+
+		}
 	}
 }
